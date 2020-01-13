@@ -21,7 +21,7 @@ python app.py
 ```
 Step 4: Test you API.
 ```
-$ curl -X POST 0.0.0.0:8080/predict -H 'Content-Type: application/json' -d '[5.9,3.0,5.1,1.8]'
+curl -X POST 0.0.0.0:8080/predict -H 'Content-Type: application/json' -d '[5.9,3.0,5.1,1.8]'
 {'success': True, 'response': 2}
 ```
 
