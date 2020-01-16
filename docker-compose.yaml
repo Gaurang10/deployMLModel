@@ -1,0 +1,9 @@
+---
+version: "2"
+services: 
+    ml-app:
+        image: deploy_ml_app:latest
+        volumes: 
+            - ./Models/:/app/Models/
+        ports:
+            - "8080:8080"
