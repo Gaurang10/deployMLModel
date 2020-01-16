@@ -10,7 +10,7 @@ model = None
 def load_model():
     global model
     # model variable refers to the global variable
-    with open('iris_trained_model.pkl', 'rb') as f:
+    with open('./Models/iris_trained_model.pkl', 'rb') as f:
         model = pickle.load(f)
 
 # define a predict function as an endpoint 

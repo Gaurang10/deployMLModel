@@ -33,9 +33,8 @@ If want to package this into a docker image then follow below steps.
 ```
 docker image build -t "deploy_ml_app" .
 ```
-
 * Run the docker as service in backgroup.
 ```
-docker run -d -p 8080:8080 deploy_ml_app .
+docker-compose up -d
 docker ps
 ```
