@@ -13,6 +13,7 @@ def load_model():
     with open('./Models/iris_trained_model.pkl', 'rb') as f:
         model = pickle.load(f)
 
+
 # define a predict function as an endpoint 
 @app.route("/predict", methods=["GET","POST"])
 def predict():
